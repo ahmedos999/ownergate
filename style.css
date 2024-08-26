@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family:'Poppins' !important;
+}
+nav{
+    font-size: 14px !important;
+}
+.bg-img{
+    background-image: url('./imgs/bg.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.sm{
+    font-size: 14px !important;
+}
+.xs{
+    font-size: 12px !important;
+}
+.w-35{
+    width: 35%;
+}
+.w-90{
+    width: 90%;
+}
+.divider{
+    width: 30%;
+    height: 2px;
+    background-color: gray;
+    margin: auto;
+}
+.divider-sm{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(178, 178, 178);
+    margin: auto;
+}
+.widthcontent{
+    width: fit-content;
+    margin: auto;
+}
+
+ /* Container for the labels */
+ .label-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* Label with arrow shape */
+  .label-arrow {
+    position: relative;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  }
+
+  /* Specific styles for label 1 and label 2 */
+  .label-1 {
+    background-color: #121312;
+  }
+
+  .label-2 {
+    background-color: #6E55FF;
+  }
+
+  /* Top Right Bookmark Container */
+  .bookmark-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  /* Bookmark with Triangle Background */
+  .bookmark {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    background-color: #f8f9fa;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  .bookmarkicon{
+    position: absolute;
+    top: 10px;
+    left: -20px;
+  }
+
+  /* Adjustments to the card */
+  .card {
+    position: relative;
+  }
+  .ad{
+    background-image: url('./imgs/Rectangle.png');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .location{
+    background-image: url('./imgs/Map.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .arrow{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+  }
+  .floatbutton{
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+    right: 30%;
+  }
+  .ht{
+    height: 70vh;
+  }
+  .bg-purple{
+    background-color: #6E55FF !important;
+  }
+  .bg-gray{
+    background-color: rgb(217, 217, 217) !important;
+    border: none !important;
+  }
