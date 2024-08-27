@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container-fluid gap-3 justify-content-center xs-2">
-    <nav class="navbar fw-bold">
+    <!-- <nav class="navbar fw-bold">
         <div class="container-fluid mx-5 d-flex justify-content-md-between justify-content-sm-center flex-column flex-lg-row">
           <div class="d-flex align-items-center">
             <img src="imgs/Icon.png" alt="">
@@ -18,7 +18,6 @@
             </a>
           </div>
       
-          <!-- Middle div with gaps between items -->
           <div class="d-flex flex-wrap gap-3 justify-content-center xs-2">
             <div>Homepage</div>
             <div>Buy</div>
@@ -46,8 +45,79 @@
               Partner Login
             </a>
           </div>
+          
         </div>
-      </nav></div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <img src="imgs/Icon.png" alt="">
+            <a class="navbar-brand" href="#">
+              <p class="mx-2 text-dark fw-bold mt-3">Owner Gate</p>
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 sm text-purple">
+              <li class="nav-item">
+                <a class="nav-link active text-dark fw-bold" aria-current="page" href="#">Homepage</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Buy
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1 Bedroom</a></li>
+                  <li><a class="dropdown-item" href="#">2 Bedroom</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Villa</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">Rent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">Find</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">Properties Near You</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">Auction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">Luxury Properties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="#">About Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <div class="d-flex align-items-baseline flex-lg-row mt-3">
+                <p class="me-3 text-dark fw-bold"><span><img src="imgs/Vector (4).png" alt=""></span> Sign Up</p>
+                <p class="text-dark fw-bold"> <span><img src="imgs/icon (9).png" alt=""></span>Sign In</p>
+                <a class="btn btn-dark ms-3" href="#" role="button">
+                    <img src="./imgs/Vector.png" alt="">
+                  Partner Login
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
       <!-- this end of navbar -->
 
       <!-- start of img div -->
@@ -58,13 +128,15 @@
 
             <div class="col-lg-4 col-sm-12 text-sm-center text-lg-start mb-5">
               <div class="fw-bold fs-2 fs d-flex flex-column align-items-center justify-content-center">
-                <p class="mx-5">Invest in your property by selling, buying or renting</p>
+                <p class="mx-5 fs-1">Invest in your property by selling, buying or renting</p>
                 <a class="btn btn-dark p-3 d-inline-flex align-items-center mt-3 gap-3 sm" href="#" role="button">
                     <img src="imgs/icons-2.png" alt="">
+                    <div class="hor-div"></div>
                      Sale and Estimate for your Property
                 </a>
-                <a class="btn btn-dark py-2 d-inline-flex align-items-center mt-3 gap-2 sm" href="#" role="button">
+                <a class="btn btn-dark py-2 d-inline-flex align-items-center mt-4 gap-2 sm" href="#" role="button">
                     <img src="imgs/icon-3.png" alt="">
+                    
                      Auction
                 </a>
             </div>
@@ -76,32 +148,32 @@
 
               <div class="fw-bold fs-6 ">
                 <!-- Tabs Navigation -->
-                <ul class="nav nav-tabs " id="myTab" role="tablist">
-                    <li class="nav-item pe-1" role="presentation">
-                        <button class="nav-link text-light bg-purple py-1 px-4" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">All</button>
-                    </li>
-                    <li class="nav-item px-1" role="presentation">
-                        <button class="nav-link bg-white border-purple-2 text-dark py-1 px-3" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Buy</button>
-                    </li>
-                    <li class="nav-item px-1" role="presentation">
-                        <button class="nav-link bg-white border-purple-2 text-dark py-1 px-3" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Rent</button>
-                    </li>
-                    <li class="nav-item px-1" role="presentation">
-                        <button class="nav-link bg-white border-purple-2 text-dark py-1 px-3" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">Find</button>
-                    </li>
+                <ul class="nav nav-tabs border-none" id="myTab" role="tablist">
+                  <li class="nav-item pe-1" role="presentation">
+                    <button class="nav-link active py-1 px-4 fw-bold" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">All</button>
+                  </li>
+                  <li class="nav-item px-1" role="presentation">
+                    <button class="nav-link py-1 px-3 fw-bold" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Buy</button>
+                  </li>
+                  <li class="nav-item px-1" role="presentation">
+                    <button class="nav-link py-1 px-3 fw-bold" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Rent</button>
+                  </li>
+                  <li class="nav-item px-1" role="presentation">
+                    <button class="nav-link py-1 px-3 fw-bold" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">Find</button>
+                  </li>
                 </ul>
     
                 <!-- Form Container -->
-                <div class="bg-white p-4 rounded-bottom shadow">
+                <div class="bg-white p-4 rounded-bottom rouned-top-right border-none shadow">
                     <!-- Tabs Content -->
                     <div class="tab-content" id="myTabContent">
                         <!-- Tab 1 Content -->
                         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                             <form>
-                                <nav class="nav nav-pills nav-fill my-2 xs w-90">
-                                    <a class="nav-link active bg-purple px-0 py-2 me-1" aria-current="page" href="#">Commercial</a>
-                                    <a class="nav-link border mx-1 px-0 py-2 text-dark" href="#">Residentail</a>
-                                    <a class="nav-link border mx-1 px-0 py-2 text-dark" href="#">Other</a>
+                                <nav class="nav nav-pills nav-fill my-2 xs w-90 my-4">
+                                    <a class="nav-link active bg-purple px-0 py-2 me-1 fw-bold sm" aria-current="page" href="#">Commercial</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Residentail</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Other</a>
                                   </nav>
                                 <div class="mb-3 d-flex gap-1">
                                     
@@ -130,10 +202,10 @@
                                       </select>
                                 </div>
                                 <div class="d-flex justify-content-between gap-2">
-                                    <button type="submit" class="btn btn-primary bg-purple w-100">search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <button type="submit" class="btn btn-primary bg-purple w-100">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                       </svg></button>
-                                    <button  class="btn btn-secondary w-100 text-dark bg-gray">Filter <span><img src="./imgs/Vector (3).png" alt=""></span></button>
+                                    <button  class="btn btn-secondary w-100 text-dark bg-gray fw-bold">Filter <span><img src="./imgs/Vector (3).png" alt=""></span></button>
                                 </div>
                             </form>
                         </div>
@@ -142,120 +214,132 @@
                         <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                             <!-- Similar form structure as Tab 1 -->
                             <form>
-                                <div class="mb-3 d-flex gap-1">
-                                    <input type="text" class="form-control w-75" id="input1" placeholder="Enter Addmail or keywords">
-                                    <select class="form-select w-25 sm" aria-label="Default select example">
-                                        <option selected>Price</option>
-                                        <option value="1">1000</option>
-                                        <option value="2">2000</option>
-                                        <option value="3">3000</option>
-                                      </select>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Property type</option>
-                                        <option value="1">Apartment</option>
-                                        <option value="2">Villa</option>
-                                        <option value="3">Office</option>
-                                      </select>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>City</option>
-                                        <option value="1">Dubai</option>
-                                        <option value="2">Sharja</option>
-                                        <option value="3">Ajman</option>
-                                      </select>
-                                </div>
-                                <div class="d-flex justify-content-between gap-2">
-                                    <button type="submit" class="btn btn-primary w-100">search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                      </svg></button>
-                                    <button  class="btn btn-secondary w-100">Filter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
-                                        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
-                                      </svg></button>
-                                </div>
-                            </form>
+                              <nav class="nav nav-pills nav-fill my-2 xs w-90 my-4">
+                                    <a class="nav-link active bg-purple px-0 py-2 me-1 fw-bold sm" aria-current="page" href="#">Commercial</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Residentail</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Other</a>
+                                  </nav>
+                              <div class="mb-3 d-flex gap-1">
+                                  
+                                  <input type="text" class="form-control w-75 sm" id="input1" placeholder="Enter Addmail or keywords">
+                                  <select class="form-select w-25 sm" aria-label="Default select example">
+                                      <option selected>Price</option>
+                                      <option value="1">1000</option>
+                                      <option value="2">2000</option>
+                                      <option value="3">3000</option>
+                                    </select>
+                              </div>
+                              <div class="mb-3">
+                                  <select class="form-select sm" aria-label="Default select example">
+                                      <option selected>Property type</option>
+                                      <option value="1">Apartment</option>
+                                      <option value="2">Villa</option>
+                                      <option value="3">Office</option>
+                                    </select>
+                              </div>
+                              <div class="mb-3">
+                                  <select class="form-select sm" aria-label="Default select example">
+                                      <option selected>City</option>
+                                      <option value="1">Dubai</option>
+                                      <option value="2">Sharja</option>
+                                      <option value="3">Ajman</option>
+                                    </select>
+                              </div>
+                              <div class="d-flex justify-content-between gap-2">
+                                  <button type="submit" class="btn btn-primary bg-purple w-100">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg></button>
+                                  <button  class="btn btn-secondary w-100 text-dark bg-gray fw-bold">Filter <span><img src="./imgs/Vector (3).png" alt=""></span></button>
+                              </div>
+                          </form>
                         </div>
     
                         <!-- Tab 3 Content -->
                         <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                             <!-- Similar form structure as Tab 1 -->
                             <form>
-                                <div class="mb-3 d-flex gap-1">
-                                    <input type="text" class="form-control w-75" id="input1" placeholder="Enter Addmail or keywords">
-                                    <select class="form-select w-25 sm" aria-label="Default select example">
-                                        <option selected>Price</option>
-                                        <option value="1">1000</option>
-                                        <option value="2">2000</option>
-                                        <option value="3">3000</option>
-                                      </select>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Property type</option>
-                                        <option value="1">Apartment</option>
-                                        <option value="2">Villa</option>
-                                        <option value="3">Office</option>
-                                      </select>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>City</option>
-                                        <option value="1">Dubai</option>
-                                        <option value="2">Sharja</option>
-                                        <option value="3">Ajman</option>
-                                      </select>
-                                </div>
-                                <div class="d-flex justify-content-between gap-2">
-                                    <button type="submit" class="btn btn-primary w-100">search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                      </svg></button>
-                                    <button  class="btn btn-secondary w-100">Filter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
-                                        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
-                                      </svg></button>
-                                </div>
-                            </form>
+                              <nav class="nav nav-pills nav-fill my-2 xs w-90 my-4">
+                                    <a class="nav-link active bg-purple px-0 py-2 me-1 fw-bold sm" aria-current="page" href="#">Commercial</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Residentail</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Other</a>
+                                  </nav>
+                              <div class="mb-3 d-flex gap-1">
+                                  
+                                  <input type="text" class="form-control w-75 sm" id="input1" placeholder="Enter Addmail or keywords">
+                                  <select class="form-select w-25 sm" aria-label="Default select example">
+                                      <option selected>Price</option>
+                                      <option value="1">1000</option>
+                                      <option value="2">2000</option>
+                                      <option value="3">3000</option>
+                                    </select>
+                              </div>
+                              <div class="mb-3">
+                                  <select class="form-select sm" aria-label="Default select example">
+                                      <option selected>Property type</option>
+                                      <option value="1">Apartment</option>
+                                      <option value="2">Villa</option>
+                                      <option value="3">Office</option>
+                                    </select>
+                              </div>
+                              <div class="mb-3">
+                                  <select class="form-select sm" aria-label="Default select example">
+                                      <option selected>City</option>
+                                      <option value="1">Dubai</option>
+                                      <option value="2">Sharja</option>
+                                      <option value="3">Ajman</option>
+                                    </select>
+                              </div>
+                              <div class="d-flex justify-content-between gap-2">
+                                  <button type="submit" class="btn btn-primary bg-purple w-100">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg></button>
+                                  <button  class="btn btn-secondary w-100 text-dark bg-gray fw-bold">Filter <span><img src="./imgs/Vector (3).png" alt=""></span></button>
+                              </div>
+                          </form>
                         </div>
     
                         <!-- Tab 4 Content -->
                         <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
                             <!-- Similar form structure as Tab 1 -->
                             <form>
-                                <div class="mb-3 d-flex gap-1">
-                                    <input type="text" class="form-control w-75" id="input1" placeholder="Enter Addmail or keywords">
-                                    <select class="form-select w-25 sm" aria-label="Default select example">
-                                        <option selected>Price</option>
-                                        <option value="1">1000</option>
-                                        <option value="2">2000</option>
-                                        <option value="3">3000</option>
-                                      </select>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Property type</option>
-                                        <option value="1">Apartment</option>
-                                        <option value="2">Villa</option>
-                                        <option value="3">Office</option>
-                                      </select>
-                                </div>
-                                <div class="mb-3">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>City</option>
-                                        <option value="1">Dubai</option>
-                                        <option value="2">Sharja</option>
-                                        <option value="3">Ajman</option>
-                                      </select>
-                                </div>
-                                <div class="d-flex justify-content-between gap-2">
-                                    <button type="submit" class="btn btn-primary w-100">search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                      </svg></button>
-                                    <button  class="btn btn-secondary w-100">Filter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
-                                        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
-                                      </svg></button>
-                                </div>
-                            </form>
+                              <nav class="nav nav-pills nav-fill my-2 xs w-90 my-4">
+                                    <a class="nav-link active bg-purple px-0 py-2 me-1 fw-bold sm" aria-current="page" href="#">Commercial</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Residentail</a>
+                                    <a class="nav-link border mx-1 px-0 py-2 text-dark fw-bold sm" href="#">Other</a>
+                                  </nav>
+                              <div class="mb-3 d-flex gap-1">
+                                  
+                                  <input type="text" class="form-control w-75 sm" id="input1" placeholder="Enter Addmail or keywords">
+                                  <select class="form-select w-25 sm" aria-label="Default select example">
+                                      <option selected>Price</option>
+                                      <option value="1">1000</option>
+                                      <option value="2">2000</option>
+                                      <option value="3">3000</option>
+                                    </select>
+                              </div>
+                              <div class="mb-3">
+                                  <select class="form-select sm" aria-label="Default select example">
+                                      <option selected>Property type</option>
+                                      <option value="1">Apartment</option>
+                                      <option value="2">Villa</option>
+                                      <option value="3">Office</option>
+                                    </select>
+                              </div>
+                              <div class="mb-3">
+                                  <select class="form-select sm" aria-label="Default select example">
+                                      <option selected>City</option>
+                                      <option value="1">Dubai</option>
+                                      <option value="2">Sharja</option>
+                                      <option value="3">Ajman</option>
+                                    </select>
+                              </div>
+                              <div class="d-flex justify-content-between gap-2">
+                                  <button type="submit" class="btn btn-primary bg-purple w-100">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg></button>
+                                  <button  class="btn btn-secondary w-100 text-dark bg-gray fw-bold">Filter <span><img src="./imgs/Vector (3).png" alt=""></span></button>
+                              </div>
+                          </form>
                         </div>
                     </div>
                 </div>
@@ -346,9 +430,10 @@
                         <!-- Top Right Bookmark -->
                         <div class="bookmark">
                           <div class="triangle"></div>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                          <img src="imgs/Bookmark.png" alt="">
+                          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                          </svg>
+                          </svg> -->
                         </div>
                       
                         <img src="imgs/image 2.png" alt="" class="img-fluid w-100">
@@ -358,7 +443,7 @@
                         <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                         <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -377,9 +462,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                         <img src="imgs/image 3 (1).png" alt="" class="img-fluid w-100">
                         <h2 class="fw-bold fs-6 my-2">1 - 3 bedrooms</h2>
@@ -388,7 +474,7 @@
                         <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                         <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -408,9 +494,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                         <img src="imgs/image 4 (1).png" alt="" class="img-fluid w-100">
                         <h2 class="fw-bold fs-6 my-2">Townhouse</h2>
@@ -419,7 +506,7 @@
                         <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                         <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -439,9 +526,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                         <img src="imgs/image 4 (2).png" alt="" class="img-fluid w-100">
                         <h2 class="fw-bold fs-6 my-2">Villa</h2>
@@ -450,7 +538,7 @@
                         <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                         <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -473,9 +561,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/image 5 (1).png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">1-3 Bedrooms</h2>
@@ -504,9 +593,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/image 5 (2).png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">Studio</h2>
@@ -515,7 +605,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -535,9 +625,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/image 5.png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">Studio</h2>
@@ -546,7 +637,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -566,9 +657,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/image 4.png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">Studio</h2>
@@ -577,7 +669,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -600,9 +692,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/Img (9).png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">3 Bedrooms Apartment</h2>
@@ -611,7 +704,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -631,9 +724,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/Img (8).png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">2 Bedrooms Apartment</h2>
@@ -642,7 +736,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -662,9 +756,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/image 2.png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">Townhouse</h2>
@@ -673,7 +768,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -693,9 +788,10 @@
                           <!-- Top Right Bookmark -->
                           <div class="bookmark">
                             <div class="triangle"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                            <img src="imgs/Bookmark.png" alt="">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                               <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
+                            </svg> -->
                           </div>
                           <img src="imgs/image 2.png" alt="" class="img-fluid w-100">
                           <h2 class="fw-bold fs-6 my-2">Studio</h2>
@@ -704,7 +800,7 @@
                           <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
                             <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
                             <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
-                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
                           </div>
                           <div class="divider-sm"></div>
                           <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
@@ -902,24 +998,22 @@
                 
                   <!-- Top Right Bookmark -->
                   <div class="bookmark">
-                    <div class="triangle"></div>
+                    <img src="imgs/Bookmark.png" alt="">
+                    <!-- <div class="triangle"></div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                    </svg>
+                    </svg> -->
                   </div>
                 
                   <img src="imgs/image 4.png" alt="" class="img-fluid">
                   <h2 class="fw-bold fs-6 my-2">Townhouse</h2>
-                  <div class="d-flex align-items-baseline">
-                      <img src="imgs/Icon (1).svg" alt="">
-                      <p class="xs text-secondary">Ajman One Complex - tower No.1 -floor No.10</p>
-                  </div>
+                  <p class="xs text-secondary"><span><img src="imgs/Icon (1).svg" alt=""></span>Ajman One Complex - tower No.1 -floor No.10</p>
                   <h2 class="fs-6 fw-bold">AED 1,800,000</h2>
-                  <div class="d-flex gap-2 xs align-items-baseline">
-                      <img src="imgs/Beds.svg" alt=""><p>2 <span class="text-secondary">bedrooms</span></p>
-                      <img src="imgs/Group.svg" alt=""><p>2 <span class="bathrooms text-secondary">bedrooms</span></p>
-                      <img src="imgs/Icon.svg" alt=""><p>1150ft</p>
-                    </div>
+                  <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
+                            <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                          </div>  
                     <div class="divider-sm"></div>
                   <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
                       <img src="imgs/Vector (2).png" alt="">
@@ -936,23 +1030,21 @@
                   <!-- Top Right Bookmark -->
                   <div class="bookmark">
                     <div class="triangle"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                    <img src="imgs/Bookmark.png" alt="">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                    </svg>
+                    </svg> -->
                   </div>
                 
                   <img src="imgs/image 5 (2).png" alt="" class="img-fluid">
                   <h2 class="fw-bold fs-6 my-2">Villa</h2>
-                  <div class="d-flex align-items-baseline">
-                      <img src="imgs/Icon (1).svg" alt="">
-                      <p class="xs text-secondary">Ajman One Complex - tower No.1 -floor No.10</p>
-                  </div>
+                  <p class="xs text-secondary"><span><img src="imgs/Icon (1).svg" alt=""></span>Ajman One Complex - tower No.1 -floor No.10</p>
                   <h2 class="fs-6 fw-bold">AED 2,500,000</h2>
-                  <div class="d-flex gap-2 xs align-items-baseline">
-                      <img src="imgs/Beds.svg" alt=""><p>2 <span class="text-secondary">bedrooms</span></p>
-                      <img src="imgs/Group.svg" alt=""><p>2 <span class="bathrooms text-secondary">bedrooms</span></p>
-                      <img src="imgs/Icon.svg" alt=""><p>1150ft</p>
-                    </div>
+                  <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
+                            <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
+                            <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 bedrooms</p>
+                          </div>  
                     <div class="divider-sm"></div>
                   <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
                       <img src="imgs/Vector (2).png" alt="">
@@ -969,23 +1061,21 @@
                   <!-- Top Right Bookmark -->
                   <div class="bookmark">
                     <div class="triangle"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                    <img src="imgs/Bookmark.png" alt="">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                    </svg>
+                    </svg> -->
                   </div>
                 
                   <img src="imgs/image 2.png" alt="" class="img-fluid">
                   <h2 class="fw-bold fs-6 my-2">Studio</h2>
-                  <div class="d-flex align-items-baseline">
-                      <img src="imgs/Icon (1).svg" alt="">
-                      <p class="xs text-secondary">Ajman One Complex - tower No.1 -floor No.10</p>
-                  </div>
+                  <p class="xs text-secondary"><span><img src="imgs/Icon (1).svg" alt=""></span>Ajman One Complex - tower No.1 -floor No.10</p>
                   <h2 class="fs-6 fw-bold">AED 2,500,000</h2>
-                  <div class="d-flex gap-2 xs align-items-baseline">
-                      <img src="imgs/Beds.svg" alt=""><p>2 <span class="text-secondary">bedrooms</span></p>
-                      <img src="imgs/Group.svg" alt=""><p>2 <span class="bathrooms text-secondary">bedrooms</span></p>
-                      <img src="imgs/Icon.svg" alt=""><p>1150ft</p>
-                    </div>
+                  <div class="d-flex gap-2 xs align-items-baseline flex-wrap">
+                    <p> <span class="text-secondary"><img src="imgs/Beds.svg" alt=""></span> 2 bedrooms</p>
+                    <p> <span class="text-secondary"><img src="imgs/Group.svg" alt=""></span> 2 bathrooms</p>
+                    <p> <span class="text-secondary"><img src="imgs/Icon.svg" alt=""></span> 1150 ft</p>
+                  </div> 
                     <div class="divider-sm"></div>
                   <div class="d-flex justify-content-center align-items-center mt-3 border p-1 widthcontent rounded gap-1">
                       <img src="imgs/Vector (2).png" alt="">
@@ -1002,17 +1092,15 @@
                   <!-- Top Right Bookmark -->
                   <div class="bookmark">  
                     <div class="triangle"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
+                    <img src="imgs/Bookmark.png" alt="">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="116" height="16" fill="currentColor" class="bi bi-bookmark bookmarkicon" viewBox="0 0 16 16">
                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                    </svg>
+                    </svg> -->
                   </div>
                 
                   <img src="imgs/image 3 (1).png" alt="" class="img-fluid">
                   <h2 class="fw-bold fs-6 my-2">1 - 3 bedrooms</h2>
-                  <div class="d-flex align-items-baseline">
-                      <img src="imgs/Icon (1).svg" alt="">
-                      <p class="xs text-secondary">Ajman One Complex - tower No.1 -floor No.10</p>
-                  </div>
+                  <p class="xs text-secondary"><span><img src="imgs/Icon (1).svg" alt=""></span>Ajman One Complex - tower No.1 -floor No.10</p>
                   <h2 class="fs-6 fw-bold">AED 800,000</h2>
                   <div class="d-flex gap-2 xs align-items-baseline">
                     <img src="imgs/Beds.svg" alt=""><p>2 <span class="text-secondary">bedrooms</span></p>
@@ -1036,7 +1124,7 @@
              <!-- start of footer -->
               <div class="container-fluid bg-dark mt-5 ">
                 <div class="row justify-content-center ">
-                    <div class="col-md-3 col-12">
+                    <div class="col-lg-3 col-12">
                       <div class="bg-white d-flex  position-relative my-5 p-3 rounded  ">
                         <img src="/imgs/image 3 (1).png" alt="" class="h-25 w-25 m-2">
                         <div>
@@ -1049,7 +1137,7 @@
                         </a>
                     </div>
                     </div>
-                    <div class="col-md-3 col-12">
+                    <div class="col-lg-3 col-12">
                       <div class=" bg-white d-flex position-relative my-5 mt-5 p-3 rounded ">
                         <img src="/imgs/image 3 (1).png" alt="" class="h-25 w-25 m-2">
                         <div>
@@ -1086,5 +1174,6 @@
               
           </div>
               <!-- end of footer -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
